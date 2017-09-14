@@ -1,0 +1,17 @@
+<Graph Description="" Group="rotors" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="2" Class="Animations:PlayAnimation" pos="10,-270,0" flags="0" GraphEntity="0">
+   <Inputs entityId="0" anim_Animation="right_rotor_spin" BlendInTime="0" Loop="1" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0"/>
+  </Node>
+  <Node Id="3" Class="Animations:PlayAnimation" pos="-10,-10,0" flags="0" GraphEntity="0">
+   <Inputs entityId="0" anim_Animation="left_rotor_spin" BlendInTime="0" Loop="1" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0"/>
+  </Node>
+  <Node Id="7" Class="entity:hornet" pos="-230,-150,0" flags="1" GraphEntity="0">
+   <Inputs entityId="0" Disable="0" DisableEngine="0" DisableMovement="0" Enable="0" EnableEngine="0" EnableMovement="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="7" portIn="Start" portOut="EnableEngine" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="7" portIn="Start" portOut="EnableEngine" enabled="1"/>
+ </Edges>
+</Graph>

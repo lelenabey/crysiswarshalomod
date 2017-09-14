@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="tires" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Warthog/tires.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="body" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Warthog/warthog.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="glass" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.41">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Warthog/warthog.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="displays" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Warthog/displays.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

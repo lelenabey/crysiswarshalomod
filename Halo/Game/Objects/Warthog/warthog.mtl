@@ -1,0 +1,48 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="displays" MtlFlags="2176" Shader="Hologram" GenMask="0" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0.38699999,0.38699999,0.38699999" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Warthog/displays.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams InterferenceSpeedScale="1" InterferenceContrast="0.94" InterferenceSizeScale="0.89999998" FresnelBias="0" FresnelPower="5" EdgeColor="1,1,1"/>
+  </Material>
+  <Material Name="hull" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_vehicleonly" Diffuse="0.588,0.588,0.588" Specular="0.126,0.126,0.126" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Warthog/warthog.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="tires" MtlFlags="128" Shader="Cloth" GenMask="268435456" SurfaceType="mat_rubber" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Warthog/tires.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" DiffuseExponent="1" FuzzynessSmoothness="2" FuzzynessStrength="1" FuzzynessSpread="1" FuzzynessSaturation="1"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_nodraw" Diffuse="0.94117653,0,0" Specular="0.89999998,0.89999998,0.89999998" Emissive="0,0,0" Shininess="10" Opacity="0.31">
+   <Textures />
+  </Material>
+  <Material Name="headlights" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0.36899999,0.36899999,0.36899999" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="100">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Warthog/warthog.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="taillights" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0.36899999,0.36899999,0.36899999" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="11.7">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Warthog/warthog.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

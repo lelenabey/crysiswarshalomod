@@ -1,0 +1,53 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="glass 1" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_vehicleonly" Diffuse="1,1,1" Specular="0.14352943,0.18823531,0.12705883" Emissive="0,0,0" Shininess="10.4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_diffuse.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_bump_normals.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="hornet_jet_reel" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_vehicleonly" Diffuse="0.588,0.588,0.588" Specular="0.2392157,0.3137255,0.21176472" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_diffuse.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_bump_normals.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Decal" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_decals.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.82352948,0.36862746,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="Material #0" MtlFlags="128" Shader="Cloth" GenMask="268435456" SurfaceType="mat_metal_nofric" Diffuse="0.588,0.588,0.588" Specular="0.71764708,0.71764708,0.71764708" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_decals.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AnimFrequency="0" AnimAmplitudeWav0="0" AnimAmplitudeWav2="0" AnimPhase="1" DiffuseExponent="1" FuzzynessSmoothness="2" FuzzynessStrength="1" FuzzynessSpread="1" FuzzynessSaturation="1"/>
+  </Material>
+  <Material Name="Material #1" MtlFlags="2176" Shader="Glass" GenMask="268436481" SurfaceType="mat_glass" Diffuse="0.588,0.588,0.588" Specular="1.791,1.791,1.791" Emissive="0,0,0" Shininess="63" Opacity="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_diffuse.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Mods/Halo/Game/Objects/Vehicles/Hornet/hornet_bump_normals.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams TintAmount="1" RefrBumpScale="0.1" ReflectionAmount="0.25" FresnelBias="0.2" FresnelScale="1" BackLightScale="1" FilterColor="1,1,1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

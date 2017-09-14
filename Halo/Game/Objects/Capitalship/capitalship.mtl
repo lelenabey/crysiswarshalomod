@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="capitalship_a" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_alien_shell" Diffuse="1,1,1" Specular="0.333,0.333,0.333" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Capitalship/h2_capital_ship_a.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="capitalship_b" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_alien_shell" Diffuse="0.98823535,0.98823535,0.98823535" Specular="0.42299998,0.42299998,0.42299998" Emissive="0,0,0" Shininess="8" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Capitalship/h2_capital_ship_b.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="capitalship_lights_a" MtlFlags="2176" Shader="Hologram" GenMask="0" SurfaceType="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="100">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Capitalship/h2_capital_ship_a.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams InterferenceSpeedScale="0" InterferenceContrast="0" InterferenceSizeScale="0.059999999" FresnelBias="0.72299999" FresnelPower="5" EdgeColor="0.90980399,0.4666667,0.90980399"/>
+  </Material>
+  <Material Name="capitalship_lights_b" MtlFlags="2176" Shader="Hologram" GenMask="0" SurfaceType="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" GlowAmount="100">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Capitalship/h2_capital_ship_b.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams InterferenceSpeedScale="0" InterferenceContrast="0" InterferenceSizeScale="0" FresnelBias="1" FresnelPower="5" EdgeColor="1,1,1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

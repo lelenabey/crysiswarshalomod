@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="hull" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_rough" Diffuse="0.13333334,0.13333334,0.13333334" Specular="1.124706,1.044706,0.89411771" Emissive="1,1,1" Shininess="34.099998" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="J:/Halo 3/Models/Ark/Frigate/frigate_base.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+  <Material Name="Decals" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.18823531,0.18823531,0.18823531" Specular="0.54823536,0.52941185,0.42823532" Emissive="1,1,1" Shininess="183.8" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="J:/Halo 3/Models/Ark/Frigate/frigate_3_base.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="NAme" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.17647059,0.17647059,0.17647059" Specular="3.0470591,2.7588239,2.1411765" Emissive="1,1,1" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="J:/Halo 3/Models/Ark/Frigate/frigate_3_base.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="dunno" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0,0,0" Specular="0.56699997,0.56699997,0.56699997" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="J:/Halo 3/Models/Ark/Frigate/frigate_base_4.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

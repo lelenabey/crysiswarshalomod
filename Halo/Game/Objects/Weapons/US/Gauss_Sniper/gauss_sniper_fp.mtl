@@ -1,0 +1,13 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="gun_metal" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_thick_weapons" Diffuse="0.57647061,0.57647061,0.57647061" Specular="32.823532,32.823532,32.823532" Emissive="0,0,0" Shininess="60.000004" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/Gauss_Sniper/gun_metal_grey_texture.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

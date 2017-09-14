@@ -1,0 +1,26 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="BR55_tp" MtlFlags="128" Shader="Metal" GenMask="268435456" SurfaceType="mat_metal_thick_weapons" Diffuse="1,1,1" Specular="26,26,26" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/BR55/battle_rifle_model.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="Mods/Halo/Game/Objects/Weapons/BR55/battle_rifle_model_reflection.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="Mods/Halo/Game/Objects/Weapons/BR55/battle_rifle_model_detail.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.31400001" Glossiness="0.75"/>
+   <MaterialLayers>
+    <Layer />
+    <Layer />
+    <Layer Name="Cloaklayer" NoDraw="0">
+     <PublicParams RefrBumpScale="1" SparksTilling="1" SparksColor="0.30000001,0.30000001,1"/>
+    </Layer>
+   </MaterialLayers>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

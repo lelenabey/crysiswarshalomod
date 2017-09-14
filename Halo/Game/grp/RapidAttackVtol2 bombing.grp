@@ -1,0 +1,91 @@
+<Objects>
+ <Object Type="Entity" Layer="Main" Id="{3E89269E-02AF-404B-80D1-95686651D987}" Name="RapidAttackVTOLBomber" Pos="199.84213,439.9726,18.551809" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RAV2bombing">
+  <Properties bAutoGenAIHidePts="0" bDisableEngine="0" bFrozen="0" FrozenModel="" Modification="" Paint="" soclasses_SmartObjectClass="" teamName="">
+   <Respawn bAbandon="1" nAbandonTimer="90" bRespawn="0" nTimer="30" bUnique="0"/>
+  </Properties>
+  <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ServerOnly">
+   <Nodes>
+    <Node Id="1" Class="Sound:PlaySoundEvent" pos="-160,-400,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" Enable="1" sound_SoundEvent="Sounds/vehicles:us_vtol:start" Voice="0" Once="0"/>
+    </Node>
+    <Node Id="9" Class="Vehicle:VehiclePassenger" pos="-580,-210,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" ActorId="0" SeatId="1"/>
+    </Node>
+    <Node Id="12" Class="Sound:PlaySoundEvent" pos="-160,-50,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" Enable="1" sound_SoundEvent="Sounds/vehicles:us_vtol:stop" Voice="0" Once="0"/>
+    </Node>
+    <Node Id="23" Class="Sound:PlaySoundEvent" pos="-160,-220,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" Enable="1" sound_SoundEvent="Sounds/vehicles:trackview_vehicles:heavy_vtol_constant_run" Voice="0" Once="0"/>
+    </Node>
+    <Node Id="24" Class="Logic:Once" pos="-350,-210,0" flags="0" InHideMask="62">
+     <Inputs />
+    </Node>
+    <Node Id="25" Name="Run sound" Class="_comment" pos="-60,-250,0" flags="0"/>
+    <Node Id="26" Name="Stop sound" Class="_comment" pos="-60,-80,0" flags="0"/>
+    <Node Id="27" Class="Entity:EntityId" pos="-710,-220,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0"/>
+    </Node>
+    <Node Id="29" Name="Start sound" Class="_comment" pos="-60,-440,0" flags="0"/>
+    <Node Id="30" Name="Vehicle" Class="_comment" pos="-700,-250,0" flags="0"/>
+    <Node Id="41" Class="Input:Key" pos="-450,-30,0" flags="0">
+     <Inputs Key="r" NonDevMode="1"/>
+    </Node>
+    <Node Id="42" Class="Logic:Any" pos="-580,-70,0" flags="0">
+     <Inputs />
+    </Node>
+    <Node Id="43" Class="Start" pos="-740,-60,0" flags="0">
+     <Inputs InGame="1" InEditor="1"/>
+    </Node>
+    <Node Id="44" Name="Boost sound" Class="_comment" pos="-60,90,0" flags="0"/>
+    <Node Id="45" Class="Sound:PlaySoundEvent" pos="-160,120,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" Enable="1" sound_SoundEvent="Sounds/vehicles:trackview_vehicles:heavy_vtol_takeoff" Voice="0" Once="0"/>
+    </Node>
+    <Node Id="46" Name="Assign here your Boost key" Class="_comment" pos="-460,-60,0" flags="0"/>
+    <Node Id="47" Class="Entity:GetPlayer" pos="-710,-140,0" flags="0"/>
+    <Node Id="48" Class="HUD:Binoculars" pos="-485.18512,123.45678,0" flags="0">
+     <Inputs TaggedEntity="0"/>
+    </Node>
+    <Node Id="50" Class="Time:Delay" pos="-630,130,0" flags="0">
+     <Inputs delay="2"/>
+    </Node>
+    <Node Id="51" Class="Sound:PlaySoundEvent" pos="-160,280,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" Enable="1" sound_SoundEvent="Sounds/physics:explosions:harbor_aircraft_crash_2" Voice="0" Once="0"/>
+    </Node>
+    <Node Id="52" Class="Vehicle:VehicleDamage" pos="-690,280,0" flags="0" GraphEntity="0">
+     <Inputs entityId="0" HitValue="0" HitPosition="0,0,0" HitRadius="0" Indestructible="0" HitType=""/>
+    </Node>
+    <Node Id="53" Class="Logic:Any" pos="-260,-130,0" flags="0" InHideMask="60">
+     <Inputs />
+    </Node>
+   </Nodes>
+   <Edges>
+    <Edge nodeIn="12" nodeOut="9" portIn="PlayTrigger" portOut="ActorOut" enabled="1"/>
+    <Edge nodeIn="23" nodeOut="9" portIn="PlayTrigger" portOut="ActorIn" enabled="1"/>
+    <Edge nodeIn="24" nodeOut="9" portIn="Input1" portOut="ActorIn" enabled="1"/>
+    <Edge nodeIn="24" nodeOut="9" portIn="Reset" portOut="ActorOut" enabled="1"/>
+    <Edge nodeIn="41" nodeOut="9" portIn="Enable" portOut="ActorIn" enabled="1"/>
+    <Edge nodeIn="42" nodeOut="9" portIn="in1" portOut="ActorOut" enabled="1"/>
+    <Edge nodeIn="48" nodeOut="9" portIn="Hide" portOut="ActorOut" enabled="1"/>
+    <Edge nodeIn="50" nodeOut="9" portIn="in" portOut="ActorIn" enabled="1"/>
+    <Edge nodeIn="53" nodeOut="9" portIn="in1" portOut="ActorOut" enabled="1"/>
+    <Edge nodeIn="1" nodeOut="24" portIn="PlayTrigger" portOut="Out" enabled="1"/>
+    <Edge nodeIn="1" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="9" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="12" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="23" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="45" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="51" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="52" nodeOut="27" portIn="entityId" portOut="Id" enabled="1"/>
+    <Edge nodeIn="45" nodeOut="41" portIn="PlayTrigger" portOut="Pressed" enabled="1"/>
+    <Edge nodeIn="45" nodeOut="41" portIn="StopTrigger" portOut="Released" enabled="1"/>
+    <Edge nodeIn="41" nodeOut="42" portIn="Disable" portOut="out" enabled="1"/>
+    <Edge nodeIn="42" nodeOut="43" portIn="in2" portOut="output" enabled="1"/>
+    <Edge nodeIn="9" nodeOut="47" portIn="ActorId" portOut="Player" enabled="1"/>
+    <Edge nodeIn="48" nodeOut="50" portIn="Show" portOut="out" enabled="1"/>
+    <Edge nodeIn="51" nodeOut="52" portIn="PlayTrigger" portOut="Destroyed" enabled="1"/>
+    <Edge nodeIn="53" nodeOut="52" portIn="in2" portOut="Destroyed" enabled="1"/>
+    <Edge nodeIn="23" nodeOut="53" portIn="StopTrigger" portOut="out" enabled="1"/>
+   </Edges>
+  </FlowGraph>
+ </Object>
+</Objects>

@@ -1,0 +1,55 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="battle_rifle_model" MtlFlags="128" Shader="Metal" GenMask="268476416" SurfaceType="mat_metal_thick_weapons" Diffuse="0.588,0.588,0.588" Specular="10.517648,10.517648,10.517648" Emissive="0.76862752,0.76862752,0.76862752" Shininess="56" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model_normal.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model_detail.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams SpecularMultiplier="0.07" AnisotropicShape="0.38600001" DetailBumpTillingU="1" DetailBumpTillingV="1" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+  <Material Name="battle_rifle_model_2" MtlFlags="128" Shader="Illum" GenMask="285212688" SurfaceType="" Diffuse="0,0,0" Specular="0.11011766,0.11011766,0.11011766" Emissive="0,0,0" Shininess="50" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/US/BR55/scar.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="Mods/Halo/Game/Objects/Weapons/US/BR55/scar_spec.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="SubSurface" File="Mods/Halo/Game/Objects/Weapons/US/BR55/back_rail.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="Material #0" MtlFlags="128" Shader="Illum" GenMask="285212672" SurfaceType="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/US/BR55/back_rail.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="Material #1" MtlFlags="128" Shader="Illum" GenMask="318783488" SurfaceType="mat_rubber" Diffuse="0.588,0.588,0.588" Specular="0.70117652,0.70117652,0.70117652" Emissive="0,0,0" Shininess="10.4" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model_normal.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="Mods/Halo/Game/Objects/Weapons/US/BR55/battle_rifle_model_detail.dds">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="0.93000001" DetailBumpTillingU="1" DetailBumpTillingV="1" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>
